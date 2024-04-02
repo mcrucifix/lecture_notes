@@ -1,0 +1,59 @@
+%& -shell-escape
+\documentclass[fleqn]{mc}
+\definecolor{auburn}{rgb}{0.43, 0.21, 0.1}
+\hypersetup{colorlinks = true,anchorcolor=blue,linkcolor=auburn}
+\newtagform{auburn}{\color{auburn}(}{)}
+\usetagform{auburn}
+\usepackage[utf8]{inputenc}
+\setlength{\mathindent}{0cm}
+\usetikzlibrary{arrows}
+\usetikzlibrary{fadings}
+\usetikzlibrary{calc}
+\usepackage{tabularx}
+\usepackage{eqparbox}
+\def\cross{\times}
+%\renewcommand{\vec}[1]{\boldsymbol{#1}}
+%\renewcommand{\vec}[1]{{#1}}
+\newcommand{\curl}{\grad\cross}
+\newcommand{\lapl}{\nabla^2}
+\renewcommand{\u}{\ensuremath{\vec{u}}}
+\newcommand{\uh}{\ensuremath{\vec{u}_h}}
+\newcommand{\ua}{\ensuremath{\vec{u}_a}}
+\newcommand{\steady}[1]{{#1}_{r}}
+\newcommand{\rf}[1]{{{#1}_{r}}}
+\newcommand{\ez}{\ensuremath{\vec{e}_z}}
+\newcommand{\ex}{\ensuremath{\vec{e}_x}}
+\newcommand{\advec}{\boldsymbol{u}\cdot\nabla}
+\newcommand{\advech}{\boldsymbol{u}_h\cdot\nabla_h}
+\newcommand{\Dt}[1]{\frac{\Dif #1}{\Dif t}}
+\newcommand{\Dtg}[1]{\left.\frac{\Dif #1}{\Dif t}\right|_g}
+%\newcommand{\pdt}[1]{\pd{#1}{t}}
+\newcommand{\odt}[1]{\od{#1}{t}}
+\newcommand{\odtr}[1]{\left.\od{#1}{t}\right|_r}
+\newcommand{\pdx}[1]{\pd{#1}{x}}
+\newcommand{\pdy}[1]{\pd{#1}{y}}
+\newcommand{\pdz}[1]{\pd{#1}{z}}
+\def\vpot{\varphi}
+\def\grad{\boldsymbol{\nabla}}
+\def\gradh{\nabla_h}
+\def\div{\grad\cdot}
+\def\anom{\tilde}
+\def\ampl{\hat}
+\def\divh{\nabla_h\cdot}
+\newcommand{\pdt}[1]{\pd{#1}{t}}
+\newcommand{\pdtt}[1]{\pd[2]{#1}{t}}
+
+\usepackage{silence}
+\WarningFilter{hyperref}{removing}
+\definecolor{olive}{rgb}{0.33, 0.42, 0.18}
+%\usepackage{siunitx}
+%\includeonly{Session_1_Elementary_Notions}
+%\includeonly{Session_2_Gravity_Waves}
+%\includeonly{Session_3_Poincare_and_Kelvin_Waves}
+
+\begin{document}
+\raggedright
+\tableofcontents
+\include{dummy}
+\end{document}
+
