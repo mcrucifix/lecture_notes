@@ -1,0 +1,11 @@
+*.aux
+*.dvi
+*.sync*
+*~
+*.toc
+*.log
+*.fls
+*_latexmk
+*.pdf
+*.out
+

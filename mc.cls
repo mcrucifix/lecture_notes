@@ -76,4 +76,4 @@
 
 \newcommand\exercice[1]{\medskip\framebox[\textwidth]{\parbox{0.98\textwidth}{{ \textbf{Exercice: }#1}}}}
 
-
+\newcommand\wmm{\ensuremath{\text{W}/\text{m}^\text{2}}}

@@ -2,4 +2,113 @@
 % vim: set filetype=latex
 \section{Sensibilit\'e climatique}
 
-Dans se court module nous 
+\subsection{Equilibre énergétique}
+
+Dan ce court module nous établissons les bases de la théorie relative à la sensibilité climatique. 
+
+La théorie part du principe d'\emph{équilibre radiatif}:
+
+à l'équilibre: la Terre \emph{absorbe} un flux d'énergie solaire: environ 340 \wmm. L'équilibre est atteint lorsque, au sommet de l'atmosphère, la Terre \emph{émet} le même flux sous forme infrarouge. 
+
+\url{https://www.ipcc.ch/report/ar6/wg1/figures/chapter-7/figure-7-2/}
+
+L'équilibre est associé à une certaine température de surface, tel que les différents échanges radiatifs et convectifs au sein de l'atmosphère sont compatibles avec cet équilibre. 
+
+
+\subsection{Forçage radiatif}
+
+On appelle \emph{forçage radiatif} toute perturbation la composition chimique de l'atmosphère et de l'état de la surface qui modifie un de ces deux flux. 
+
+Notamment, un \emph{doublement} de la concentration en dioxyde de carbone \emph{réduit} le flux infrarouge net au sommet emis au sommet de l'atmoshpère, d'environ 3.7\wmm. 
+
+
+Si on considère comme réference l'an 1750, pour décrire l'an 2019, on trouve différentes sources de forçage radiatif associés aux activité humaines: 
+
+\begin{itemize}
+\item L'augmentation de la concentration en différents gaz à effet de serre, donc le CO$_2$, le CH$_4$, l'hemioxyde d'azote et les halogènes;
+\item l'ozone troposphérique et stratosphérique;
+\item les changements d'affectatien du sol;
+\item les concentrations en aérosolse, notamment liés aux émissions de dioxye de souffre. 
+\end{itemize}
+
+
+Ces deux dernièrs forçages sont des forçages négatifs: ils augmentent le flux radiatif vers l'espace car ils contribuent à réfléchir davantage de lumière solaire vers l'espace. 
+
+\url{https://www.ipcc.ch/report/ar6/wg1/figures/chapter-7/figure-7-6}
+
+Une des difficultés de la gouvernance climatique est que ces différents forçages sont associés à des perturbation physiques qui n'évolueront pas selon les mêmes échelles de temps. 
+
+Par exemple, une diminution des \emph{émissions} d'aérosols se traduit très rapidement par une diminution du forçage radiatif associé car les aérosols retombent rapidement sur la surface. 
+
+
+En revanche, une diminution des émissions de \emph{CO$_2$} produiront une stagnation du forçage radiatif associé au CO$_2$, avec une diminution sur des échelles de plusieurs dizaines d'années. On dit que les émissions de CO$_2$ sont \emph{cumulatives}. 
+
+
+\subsection{Réponse radiative}
+
+A la suite du forçage, le système Terre réagit (répond)  en modifiant à son tour les flux radiatifs entrant et sortant. 
+
+On a donc: 
+\begin{equation}
+  R_p = \lambda_p \Delta T
+\end{equation}
+
+\medskip
+
+\begin{tabular}{ll}
+  $F$: & le forçage \\
+  $R$: & la réponse \\
+  $N$: & le flux radiatif net 
+\end{tabular}
+
+\begin{equation}
+  F + R = N
+\end{equation}
+
+La réponse se fait selon différentes modalités. Par exemple, au fur et à mesure que la température augmente, le flux radiatif émis augmente également du fait qu'une surface plus chaude émet davantage d'infrarouge. C'est la réponse de Planck. Si on définit $\Delta T$ la variation de température, on a
+
+\begin{equation}
+  R_p = \lambda_p \Delta T
+\end{equation}
+
+où on a utilisé l'indice $p$ pour désigner le phénomène de Planck. L'indice de proportionalité est \emph{négatif} dans la mesure où la réponse s'oppose au forçage de façon à le neutraliser : $\lambda_p < 0$. 
+
+D'autres réponses ont lieu. 
+
+Par exemple, avec le réchauffement, une partie de la glace fond, si bien que le flux solaire absorbé augmente. Cette fois l'indice de proportionalité est \emph{positif} dans la mesure où la fonte de la glace génère une perturbation visant à renforcer le forçage. 
+
+\begin{equation}
+  R_g = \lambda_g \Delta T \quad R_g>0
+\end{equation}
+
+On nomme \emph{feedbacks} les réponses radiatives associées avec les différentes composantes du système climatique. On dira qu'ils sont négatifs ou positifs selon le signe du coefficient $\lambda$. Ainsi, le feedback de Planck est un feedback \emph{negatif}, et celui associé à la glace est \emph{positif}. 
+
+Certains feedbacks ont un signe incertain du fait de la complexité des mécanismes en jeu. Par exemple, les nuages peuvent contribuer à une réponse positive ou négative selon les nuages affectés et la façon dont ils sont affectés. 
+
+Si on note, de façon générique $\lambda_i$ les différents coefficients, où $i\in\{p, g, \ldots\}$ pour $p$, Planck, $g$, glace, et tous les autres, alors on peut écrire 
+
+\begin{equation}\label{eq:f}
+  F + \sum \lambda_i \Delta T = N
+\end{equation}
+
+Lorsque l'équilibre est restauré (ce qui peu prendre plusieurs dizaines d'années, voir plus si on tient compte des composantes les plus lentes du système climatique), $N=0$. En résolvant l'équation \eqref{eq:f}, on trouve 
+
+\begin{equation}
+  \Delta T = - \frac{R}{\sum \lambda_i}
+\end{equation}
+
+
+
+Par convention, on appelle \emph{sensibilité climatique} le changement de température à l'équilibre lié à un doublement de la concentration en CO$_2$:
+
+\def\cc{\ensuremath{2\times\text{CO}_2}}
+
+\begin{equation}
+  \Delta T_{\cc} = - \frac{R_{\cc}}{\sum \lambda_i}
+\end{equation}
+
+La valeur de $T_{\cc}$ est généralement estimée entre 2.5 et 4$^\circ$C. 
+
+\url{https://www.ipcc.ch/report/ar6/wg1/figures/chapter-1/figure-1-16}
+
+
